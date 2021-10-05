@@ -32,11 +32,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
-  });
+  // //ドロワーメニュー
+  // $('.navbar_toggle').on('click', function () {
+  //   $(this).toggleClass('open');
+  //   $('.menu').toggleClass('open');
+  // });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
@@ -51,4 +51,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
+});
+
+jQuery('.p-header__drawer').on('click', function (e) {
+  e.preventDefault();
+  jQuery('.p-header__drawer').toggleClass('open');
+  jQuery('.p-header__sp-nav').toggleClass('open');
+  jQuery('.p-drawer-background').toggleClass('open');
+  return false;
 });
