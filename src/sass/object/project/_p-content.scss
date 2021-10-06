@@ -1,0 +1,172 @@
+.c-bg-color{
+  background-color:#111;
+}
+
+.p-philosophy{
+  text-align:center;
+  color:#fff;
+  letter-spacing: rem(2);
+  
+  @include mq('pc'){
+    width:45.9%;
+  }
+}
+
+.p-philosophy__margin-top{
+  margin-top:rem(85);
+  // padding:rem(85) $padding-sp 0 $padding-sp ;
+  padding:0 $padding-sp;
+  @include mq('pc'){
+    // margin:0 auto;
+    padding:0;
+    margin:rem(69) auto 0;
+  }
+}
+
+.p-philosophy__title{
+  font-size:rem(20);
+}
+
+.p-philosophy__text{
+  text-align:left;
+  font-size: rem(16);
+  line-height: rem(23.17);
+  margin-top:rem(24);
+
+  @include mq('pc'){
+    width:100%;
+  }
+}
+
+.p-philosophy-main{
+  color:#fff;
+
+}
+
+.p-philosophy-main__margin-top{
+  margin-top: rem(80);
+  @include mq('pc'){
+    margin:rem(150) auto 0;
+  //  margin-top: rem(150);
+   width:100%;
+   max-width:rem(1090);
+  }
+}
+
+.p-philosophy-main__item + .p-philosophy-main__item{
+  margin-top:rem(48);
+  @include mq('pc'){
+    margin-top:rem(104);
+  }
+}
+
+.p-philosophy-item{
+  @include mq('pc'){
+    display:flex;
+  }
+}
+
+.p-philosophy-item:nth-child(2){
+  @include mq('pc'){
+    flex-direction:row-reverse;
+  }
+}
+
+// .p-philosophy-item__img{
+//   width:100%;
+//   @include mq('pc'){
+//     width:50.45%;
+//   }
+// }
+
+// .p-philosophy-item__img img{
+//   width:100%;
+//   height:100%;
+// }
+
+.p-philosophy-item__img{
+   position:relative;
+  //  width:100%;
+   padding-top:69.786%;
+
+  @include mq('pc'){
+    position:static;
+    width:50.45%;
+    padding-top:0;
+
+  }
+}
+
+.p-philosophy-item__img img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  @include mq('pc'){
+    position:static;
+  }
+}
+
+
+.p-philosophy-item__message{
+  padding:0 $padding-sp;
+  @include mq('pc'){
+   padding:0;
+   width:46.78899%;
+  }
+}
+
+.p-philosophy-item__message_margin{
+  margin-top:rem(24);
+  @include mq('pc'){
+    margin-left:2.75% ;
+    margin-top: 0;
+  }
+}
+
+.p-philosophy-item__message_two{
+  @include mq('pc'){
+    margin-left:0 ;
+    margin-right:2.75%;
+  }
+}
+
+
+
+.p-philosophy-item__title{
+  text-align:center;
+  font-size:rem(20);
+  line-height:1.448;
+  letter-spacing:rem(2);
+  @include mq('pc'){
+    text-align:left;
+    font-size:rem(25);
+    letter-spacing:rem(0.5);
+  }
+}
+
+.p-philosophy-item__text{
+   font-size:rem(16);
+   line-height:1.4481;
+   letter-spacing:rem(2);
+  
+   @include mq('pc'){
+    line-height: 2.1875;
+  }
+
+}
+
+.p-philosophy-item__text_margin-top{
+  margin-top:rem(24);
+  @include mq('pc'){
+    margin-top: rem(40);
+  }
+}
+
+
+
+
+
+
+

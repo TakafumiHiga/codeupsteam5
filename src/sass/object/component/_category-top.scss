@@ -1,0 +1,24 @@
+.c-category-top{
+  height:rem(425);
+  width:100%;
+  align-items:center;
+  text-align:center;
+  display:grid;
+  background:center center /cover;
+  
+  @include mq('pc'){   
+    height:rem(370);
+  }
+}
+
+.c-content-top__title{
+   color:#fff;
+   font-weight:700;
+   font-size:rem(30);
+   letter-spacing:rem(2);
+
+   @include mq('pc'){
+    font-size:rem(35);
+    line-height:1;
+  } 
+}
