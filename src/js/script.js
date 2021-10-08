@@ -60,3 +60,15 @@ jQuery('.p-header__drawer').on('click', function (e) {
   jQuery('.p-drawer-background').toggleClass('open');
   return false;
 });
+
+
+
+jQuery('.related-message').hover(function(){
+  $(this).toggleClass("is-hover-bg");
+  $(this).children(".p-related-message__title").toggleClass("is-hover-color");
+  $(this).children(".p-related-message__text ").toggleClass("is-hover-color");
+  $(this).find(".p-related-unit__date").toggleClass("is-hover-color");
+});
+
+
+

@@ -1,0 +1,167 @@
+.c-detail-related{
+  padding:0 $padding-sp;
+}
+
+.u-detail-related_margin{
+  margin-top:rem(120);
+  @include mq('pc'){
+    max-width:rem(1100);
+    width:100%;
+    margin:rem(104) auto 0;
+    
+  } 
+}
+
+
+.p-detail-related-common{
+  font-size:rem(16);
+  // line-height:1.448;
+  letter-spacing:rem(2);
+  text-align:center;
+  color:#fff;
+  border:1px solid #fff;
+  
+}
+.p-detail-related__pc-title{
+  display:none;
+  @include mq('pc'){
+    height:rem(40);
+    line-height:rem(40);
+    display:block;
+    background-color:#333333;
+    
+  } 
+}
+
+.p-detail-related__sp-title{
+  display:block;
+  height:rem(42);
+  line-height:rem(42);
+  background-color:transparent;
+  @include mq('pc'){
+    display:none;
+
+   } 
+}
+
+.c-detail-related__cards{
+  margin-top:rem(32);
+
+  @include mq('pc'){
+    margin-top:rem(80);
+    display:flex;
+  } 
+}
+
+.c-related-cards__card + .c-related-cards__card {
+   margin-top:rem(24);
+
+   @include mq('pc'){
+    margin-top:0;
+    margin-left:rem(32);
+  } 
+}
+
+.c-related-card__img{
+  position:relative;
+  width:100%;
+  padding-top:66.5671%;
+  @include mq('pc'){
+    padding-top:58.9641%;
+  } 
+}
+
+.c-related-card__img img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.p-related-card__message{
+  background-color:#fff;
+  padding:rem(4) rem(24) rem(16) rem(22);
+  transition:all 0.3s ease 0s;
+
+
+  @include mq('pc'){
+    padding:rem(3) rem(7) rem(14) rem(9);
+  } 
+}
+
+// .p-related-card__message:hover{
+//   background-color:#111;
+//   color:#fff;
+// }
+
+
+.p-related-message__title{
+  font-size:rem(18);
+  line-height:1.9444;
+  letter-spacing:rem(1);
+  font-weight:500;
+  
+  @include mq('pc'){
+    font-size:rem(14);
+    line-height:2.5;
+
+  } 
+}
+
+.p-related-message__text{
+  display:block;
+  font-size:rem(14);
+  line-height:1.8571;
+  letter-spacing:rem(1);
+  @include mq('pc'){
+    display:none; 
+  } 
+}
+.p-related-message__text_margin{
+  margin-top:rem(4);
+} 
+
+.p-related-message__unit{
+  display:flex;
+  margin-top:rem(3);
+  justify-content:space-between;
+  align-items:center;
+  font-size:rem(14);
+  line-height:1.8571;
+  letter-spacing:rem(1);
+  @include mq('pc'){
+    margin-top:rem(1);
+  } 
+}
+
+.p-related-unit__cat{
+  background-color:#FFEA2E;
+  padding:rem(2) rem(5);
+  // transition:all 0.3s ease 0s;
+}
+
+.is-hover-bg{
+  background-color:#111;
+  transition:all 0.3s ease 0s;
+}
+
+.is-hover-color{
+  color:#fff;
+  transition:all 0.3s ease 0s;
+}
+
+// .p-related-unit__cat:hover{
+//   color:#333333;
+// }
+
+.p-related-unit__date{
+  
+}
+
+
+
+
+
+
+
