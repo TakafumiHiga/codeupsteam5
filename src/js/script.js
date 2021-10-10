@@ -49,6 +49,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-
-
 });
+
+//swiper
+
+//メイン
+var slider = new Swiper ('.gallery-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイル
+var thumbs = new Swiper ('.gallery-thumbs', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+//3系～
+//メインとサムネイルを紐づける
+slider.params.control = thumbs;
+thumbs.params.control = slider;
