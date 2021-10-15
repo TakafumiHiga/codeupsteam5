@@ -11,7 +11,7 @@
 .u-blog-detail_margin-top{
   margin:rem(78) auto 0;
 
-  @include mq('pc'){
+  @include mq('tab'){
     margin-top:rem(91)
    } 
 }
@@ -19,7 +19,7 @@
 .u-blog-detail_margin{
   margin:0 $padding-sp;
 
-  @include mq('pc'){
+  @include mq('tab'){
      margin-left:0;
      margin-right:0;
    } 
@@ -31,7 +31,7 @@
   letter-spacing:rem(0.4);
   font-weight:400;
   margin-top: rem(78);
-  @include mq('pc'){
+  @include mq('tab'){
     margin-top: rem(91);
     font-size: rem(23);
     line-height:1.5217;
@@ -41,7 +41,7 @@
 
 .p-blog-detail__abuot{
   margin-top:rem(16);
-  @include mq('pc'){
+  @include mq('tab'){
    margin-top:rem(32);
   } 
 }
@@ -70,7 +70,7 @@
   position:relative;
   padding-top:66.9333%;
   width:100%;
-  @include mq('pc'){
+  @include mq('tab'){
    padding-top:53.4418%;
    margin-top:rem(41);
   } 
@@ -89,7 +89,7 @@
   font-size:rem(16);
   line-height:2.1875;
   letter-spacing:rem(0.4);
-  @include mq('pc'){
+  @include mq('tab'){
    margin-top:rem(32);
   } 
 }
@@ -101,7 +101,7 @@
   padding-left:rem(9);
   margin-top:rem(24);
   position:relative;
-  @include mq('pc'){
+  @include mq('tab'){
    margin-top:rem(32);
   } 
 }
@@ -124,7 +124,7 @@
   display:inline-block;
   border-bottom:3px solid #fff;
   margin-left:rem(29);
-  @include mq('pc'){
+  @include mq('tab'){
    margin-left:rem(8);
    margin-top:rem(32);
   } 
@@ -152,7 +152,7 @@
   width:100%;
   padding-top:66.9333%;
   margin-top:rem(24);
-  @include mq('pc'){
+  @include mq('tab'){
    margin-top:rem(32);
    padding-top:53.4418%;
    } 
@@ -172,7 +172,7 @@
   letter-spacing:rem(0.4);
   line-height:2.1875;
 
-  @include mq('pc'){
+  @include mq('tab'){
    margin-top:rem(32);
   } 
 }

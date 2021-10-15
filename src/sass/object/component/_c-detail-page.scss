@@ -4,7 +4,7 @@
 
 .c-detail-page__unit{
   margin-top:rem(80);
-  @include mq('pc'){
+  @include mq('tab'){
     margin-top:rem(104);
    } 
 }

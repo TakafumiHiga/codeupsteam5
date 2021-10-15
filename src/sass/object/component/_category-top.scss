@@ -6,7 +6,7 @@
   display:grid;
   background:center center /cover;
   
-  @include mq('pc'){   
+  @include mq('tab'){   
     height:rem(370);
   }
 }
@@ -17,7 +17,7 @@
    font-size:rem(30);
    letter-spacing:rem(2);
 
-   @include mq('pc'){
+   @include mq('tab'){
     font-size:rem(35);
     line-height:1;
   } 
