@@ -1,3 +1,4 @@
+
 .c-category-top{
   height:rem(425);
   width:100%;
@@ -5,10 +6,25 @@
   text-align:center;
   display:grid;
   background:center center /cover;
-  
+
+  padding-top: 113.3333%;
+  height:rem(370);
+  position: relative;
+  width: 100%;
   @include mq('tab'){   
-    height:rem(370);
+    padding-top: 28.9062%;
   }
+}
+
+.c-category-top__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include mq('tab'){
+    
+  } 
 }
 
 .c-content-top__title{
@@ -16,7 +32,11 @@
    font-weight:700;
    font-size:rem(30);
    letter-spacing:rem(2);
-
+   
+   position:absolute;
+   left:50%;
+   top:50%;
+   transform: translateX(-50%);
    @include mq('tab'){
     font-size:rem(35);
     line-height:1;
