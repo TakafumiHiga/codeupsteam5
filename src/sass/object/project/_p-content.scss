@@ -3,23 +3,17 @@
 }
 
 .p-philosophy{
-  text-align:center;
   color:#fff;
-  letter-spacing: rem(2);
-  
-  @include mq('tab'){
-    width:45.9%;
-  }
 }
-
-.p-philosophy__margin-top{
+.p-philosophy__header{
+  text-align:center;
   margin-top:rem(85);
-  // padding:rem(85) $padding-sp 0 $padding-sp ;
   padding:0 $padding-sp;
+  letter-spacing: rem(2);
   @include mq('tab'){
-    // margin:0 auto;
     padding:0;
-    margin:rem(69) auto 0;
+     width:45.9%;
+     margin:rem(69) auto 0;
   }
 }
 
@@ -38,12 +32,7 @@
   }
 }
 
-.p-philosophy-main{
-  color:#fff;
-
-}
-
-.p-philosophy-main__margin-top{
+.p-philosophy__body{
   margin-top: rem(80);
   @include mq('tab'){
     margin:rem(150) auto 0;
@@ -52,104 +41,109 @@
   }
 }
 
-.p-philosophy-main__item + .p-philosophy-main__item{
-  margin-top:rem(48);
+.p-philosophy-main__margin-top{
+  margin-top: rem(80);
   @include mq('tab'){
-    margin-top:rem(104);
+    margin-top: rem(150);
   }
 }
 
-.p-philosophy-item{
-  @include mq('tab'){
-    display:flex;
-  }
+.p-philosophy__content + .p-philosophy__content{
+    margin-top:rem(48);
+    @include mq('tab'){
+      margin-top:rem(104);
+    }
 }
 
-.p-philosophy-item:nth-child(2){
-  @include mq('pc'){
-    flex-direction:row-reverse;
-  }
+.p-philosophy-block01{
+    @include mq('tab'){
+      display:flex;
+    }
 }
 
-
-.p-philosophy-item__img{
-   position:relative;
-   padding-top:69.786%;
-
-  @include mq('tab'){
-    position:static;
-    width:50.45%;
-    padding-top:0;
-
-  }
+.p-philosophy-block02{
+    @include mq('tab'){
+      display:flex;
+      flex-direction:row-reverse;
+    }
 }
 
-.p-philosophy-item__img img{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  @include mq('tab'){
-    position:static;
-  }
+.p-philosophy-block03{
+    @include mq('tab'){
+      display:flex;
+    }
 }
 
 
-.p-philosophy-item__message{
-  padding:0 $padding-sp;
-  @include mq('tab'){
-   padding:0;
-   width:46.78899%;
-  }
-}
-
-.p-philosophy-item__message_margin{
-  margin-top:rem(24);
-  @include mq('tab'){
-    margin-left:2.75% ;
-    margin-top: 0;
-  }
-}
-
-.p-philosophy-item__message_two{
-  @include mq('tab'){
-    margin-left:0 ;
-    margin-right:2.75%;
-  }
-}
-
-
-
-.p-philosophy-item__title{
-  text-align:center;
-  font-size:rem(20);
-  line-height:1.448;
-  letter-spacing:rem(2);
-  @include mq('tab'){
-    text-align:left;
-    font-size:rem(25);
-    letter-spacing:rem(0.5);
-  }
-}
-
-.p-philosophy-item__text{
-   font-size:rem(16);
-   line-height:1.4481;
-   letter-spacing:rem(2);
+.p-philosophy-block__img{
+     position:relative;
+     padding-top:69.786%;
   
-   @include mq('tab'){
-    line-height: 2.1875;
-  }
+    @include mq('tab'){
+      position:static;
+      width:50.45%;
+      padding-top:0;
+  
+    }
+}
+
+.p-philosophy-block__img img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    @include mq('tab'){
+      position:static;
+    }
+}
+
+
+
+.p-philosophy-block__message{
+    padding:0 $padding-sp;
+    margin-top:rem(24);
+    @include mq('tab'){
+     padding:0;
+     width:46.78899%;
+     margin-left:2.75% ;
+     margin-top: 0;
+    }
 
 }
 
-.p-philosophy-item__text_margin-top{
-  margin-top:rem(24);
-  @include mq('tab'){
-    margin-top: rem(40);
-  }
+.p-philosophy-block__message_two{
+    @include mq('tab'){
+      margin-left:0 ;
+      margin-right:2.75%;
+    }
 }
+
+.p-philosophy-message__title{
+    text-align:center;
+    font-size:rem(20);
+    line-height:1.448;
+    letter-spacing:rem(2);
+    @include mq('tab'){
+      text-align:left;
+      font-size:rem(25);
+      letter-spacing:rem(0.5);
+    }
+}
+
+.p-philosophy-message__text{
+     font-size:rem(16);
+     line-height:1.4481;
+     letter-spacing:rem(2);
+     margin-top:rem(24);
+    
+     @include mq('tab'){
+      line-height: 2.1875;
+      margin-top: rem(40);
+    }
+}
+
+
 
 
 
