@@ -4,28 +4,30 @@
   <body>
       <%- include('./common/_header') %>
       <%- include('./common/_category-top') %>
-    <main class="c-bg-color l-inner">
-      <%- include('./parts/_c-breadcrumb') %>
-
-      <div class="p-philosophy">
-        <div class="p-philosophy__header">
-          <h2 class="p-philosophy__title">企業理念</h2>
-          <p class="p-philosophy__text">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
-        </div>
-  
-        <div class="p-philosophy__body">        
-          <div class="p-philosophy__content">
-            <%- include('./parts/_p-philosophy-block01') %>
+    <div class="c-bg-color">
+      <div class="l-inner">
+        <%- include('./parts/_c-breadcrumb') %>
+        
+        <div class="p-philosophy">
+          <div class="p-philosophy__header">
+            <h2 class="p-philosophy__title">企業理念</h2>
+            <p class="p-philosophy__text">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
           </div>
-          <div class="p-philosophy__content">
-            <%- include('./parts/_p-philosophy-block02') %>
+          
+          <div class="p-philosophy__body">        
+            <div class="p-philosophy__content">
+              <%- include('./parts/_p-philosophy-block01') %>
+            </div>
+            <div class="p-philosophy__content">
+              <%- include('./parts/_p-philosophy-block02') %>
+            </div>
+            <div class="p-philosophy__content">
+              <%- include('./parts/_p-philosophy-block03') %>
+            </div>
           </div>
-          <div class="p-philosophy__content">
-            <%- include('./parts/_p-philosophy-block03') %>
-          </div>
-        </div>
-      </div> 
-      
-    </main> 
+        </div> 
+        
+      </div>
+    </div> 
   </body>
 </html>
