@@ -1,0 +1,15 @@
+.l-footer {
+}
+
+.l-footer__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem(20);
+  @include mq(tab) {
+    max-width: rem(1266);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+  }
+}
