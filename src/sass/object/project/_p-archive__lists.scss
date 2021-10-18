@@ -1,0 +1,21 @@
+.p-archive__lists {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+}
+.p-archive__list {
+  letter-spacing: 0.02em;
+}
+.p-archive__list + .p-archive__list {
+  margin-left: rem(32);
+  @include mq(tab) {
+    margin-left: rem(40);
+  }
+}
+
+.is-active {
+  background-color: #fff;
+  color: #111;
+  padding: rem(3) rem(8);
+}

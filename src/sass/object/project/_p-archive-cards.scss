@@ -1,0 +1,6 @@
+.p-archive-cards {
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

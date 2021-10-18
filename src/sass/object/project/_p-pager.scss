@@ -1,0 +1,44 @@
+.p-pager {
+}
+.p-pager__wrapper {
+  max-width: rem(332);
+  width: 100%;
+  margin: 0 auto;
+}
+.p-pager__lists {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.p-pager__list {
+  border: 1px solid #fff;
+  padding: 0 rem(6);
+  letter-spacing: 0.005em;
+}
+.p-pager__list + .p-pager__list {
+  margin-left: rem(16);
+}
+.p-pager__prev-wrapper {
+  text-align: center;
+  margin-right: rem(24);
+}
+.p-pager__prev {
+  padding: 0 rem(10);
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 0.02em;
+}
+.p-pager__next-wrapper {
+  margin-left: rem(24);
+  text-align: center;
+}
+.p-pager__next {
+  padding: 0 rem(10);
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 0.02em;
+}
+.p-pager__list--active{
+    background-color: #fff;
+    color: #111;
+}
