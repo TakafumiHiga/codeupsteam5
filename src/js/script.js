@@ -32,6 +32,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  //セレクタ(js-header-height)部分にpaddingが聞いているので、メソッドにinnerHeightを使っています。
+  $(window).on('scroll', function () {
+    if ($('.js-header-height').innerHeight() < $(this).scrollTop()){
+         $('.l-header').css('background', 'rgba(17,17,17,1)');
+    } else {
+      $('.l-header').css('background', 'rgba(17,17,17,0.5)');
+    }
+  });
+  
+  // $(window).on('scroll', function() {
+  //   // let ans = $('.c-underlayer-top').height();
+  //   if($('c-underlayer-top').height() < $(this).scrollTop()){
+  //     alert('取得できてます。');
+  //   }
+  // });
+
+  // $(window).on('scroll', function() {
+  //   if($('.c-underlayer-top').height() < $(this).scrollTop()) {
+  //     $('.l-header').css('background', 'rgba(17,17,17,1)');
+  //   }else{
+  //     $('l-header').css('background', 'rgba(17,17,17,0.5');
+  //   }
+  // });
+
+
   // //ドロワーメニュー
   // $('.navbar_toggle').on('click', function () {
   //   $(this).toggleClass('open');
@@ -48,10 +73,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
-
 });
+
+
 
 jQuery('.p-header__drawer').on('click', function (e) {
   e.preventDefault();

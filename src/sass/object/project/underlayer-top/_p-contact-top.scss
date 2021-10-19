@@ -1,14 +1,22 @@
 
-.c-category-top{
-  height:rem(425);
+.p-contact-top{
+  background-image:url(.././images/common/header_sp/contact-mv_sp.png);
+  @include mq('tab'){   
+   background-image:url(.././images/common/header/contact-mv.png);
+ }
+}
+
+
+
+
+
+.c-underlayer-top{
   width:100%;
   align-items:center;
   text-align:center;
   display:grid;
-  background:center center /cover;
-
+  background-position:center center ;background-size:cover;
   padding-top: 113.3333%;
-  height:rem(370);
   position: relative;
   width: 100%;
   @include mq('tab'){   
@@ -16,18 +24,17 @@
   }
 }
 
-.c-category-top__img{
+.c-underlayer-top__img{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  @include mq('tab'){
-    
+  @include mq('tab'){  
   } 
 }
 
-.c-content-top__title{
+.c-underlayer-top__title{
    color:#fff;
    font-weight:700;
    font-size:rem(30);
