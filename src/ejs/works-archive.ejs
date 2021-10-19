@@ -1,12 +1,11 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
 <div class="l-works-archive p-works-archive">
     <div class="l-inner">
         <div class="p-works-archive__category">
-            <ul class="p-works-archive__lists p-archive__lists">
-                <li class="p-archive__list is-active">ALL</li>
-                <li class="p-archive__list">カテゴリ1</li>
-                <li class="p-archive__list">カテゴリカテゴリ</li>
-                <li class="p-archive__list">カテ</li>
-            </ul>
+            <%- include('./parts/_p-archive__lists') %>
         </div>
     </div>
     <div class="l-works-archive__inner">
@@ -75,20 +74,12 @@
     </div>
     <div class="l-pager p-pager">
         <div class="l-inner">
-            <div class="p-pager__wrapper">
-                <ul class="p-pager__lists">
-                    <div class="p-pager__prev-wrapper">
-                        <li class="p-pager__prev">PREV</li>
-                    </div>
-                    <li class="p-pager__list p-pager__list--active">1</li>
-                    <li class="p-pager__list">2</li>
-                    <li class="p-pager__list">3</li>
-                    <li class="p-pager__list">4</li>
-                    <div class="p-pager__next-wrapper">
-                        <li class="p-pager__next">NEXT</li>
-                    </div>
-                </ul>
-            </div>
+            <%- include('./parts/_p-pager') %>
         </div>
     </div>
 </div>
+<%- include('./common/_contact') %>
+<%- include('./common/_footer') %>
+<%- include('./parts/_c-page-top',{link:'#'}) %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.p-blog-archive {
+  @include mq(tab) {
+    padding-bottom: rem(150);
+  }
+}
+.p-blog-archive__category {
+}
+.p-blog-archive__cards {
+  margin-top: rem(37);
+  @include mq(tab) {
+    margin-top: rem(40);
+  }
+}
+.p-blog-archive__pager {
+  margin-top: rem(80);
+  @include mq(tab) {
+    margin-top: rem(104);
+  }
+}
