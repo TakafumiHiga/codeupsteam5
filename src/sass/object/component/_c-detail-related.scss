@@ -1,14 +1,14 @@
 .c-detail-related{
-  padding:0 $padding-sp;
+  // padding:0 $padding-sp;
 }
 
 .u-detail-related_margin{
   margin-top:rem(120);
   @include mq('tab'){
-    max-width:rem(1100);
-    width:100%;
+    // max-width:rem(1100);
+    // width:100%;
     margin:rem(104) auto 0;
-    
+    margin-top:rem(104);
   } 
 }
 
