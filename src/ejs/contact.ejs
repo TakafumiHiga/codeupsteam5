@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_top-header') %>
+    <section class="l-page-contact p-page-contact">
+        <div class="l-inner" >
+            <form class="p-page-contact__form" action="">
+                <dl class="p-page-contact__form-dl p-form">
+                    <div class="p-form__error-wrapper">
+                        <p class="p-form__error">※必要事項を入力してください</p>
+                    </div>
+                    <div class="p-form__row-wrapper">
+                        <div class="p-form__row">
+                            <dt class="p-form__label">
+                                <label for="your-company">※会社名・団体名</label>
+                            </dt>
+                            <dd class="p-form__description">
+                                <input id="your-company" type="text" placeholder="テキストがはいります">
+                            </dd>
+                        </div>
+                        <div class="p-form__row">
+                            <dt class="p-form__label">
+                                <label for="your-department">※部署名</label>
+                            </dt>
+                            <dd class="p-form__description">
+                                <input id="your-department" type="text" placeholder="テキストがはいります">
+                            </dd>
+                        </div>
+                        <div class="p-form__row">
+                            <dt class="p-form__label">
+                                <label for="your-name">※お名前</label>
+                            </dt>
+                            <dd class="p-form__description">
+                                <input id="your-name" type="text" placeholder="テキストがはいります">
+                            </dd>
+                        </div>
+                        <div class="p-form__row">
+                            <dt class="p-form__label">
+                                <label for="your-name-furi">※ふりがな</label>
+                            </dt>
+                            <dd class="p-form__description">
+                                <input id="your-name-furi" type="text" placeholder="テキストがはいります">
+                            </dd>
+                        </div>
+                        <div class="p-form__row--textarea">
+                            <dt class="p-form__label p-form__row--textarea-title">
+                                <label for="your-question">※お問い合わせ内容</label>
+                            </dt>
+                            <dd class="p-form__description">
+                                <textarea id="your-question" placeholder="テキストがはいります"></textarea>
+                            </dd>
+                        </div>
+                        <div class="p-form__submit">
+                            <input type="submit" value="送信">
+                        </div>
+                    </div>
+                </dl>
+            </form>
+        </div>
+    </section>
+    
+    <%- include('./common/_footer') %>
+      <%- include('./parts/_c-page-top',{link:'#'}) %>
+    </body>
+    </html>
+

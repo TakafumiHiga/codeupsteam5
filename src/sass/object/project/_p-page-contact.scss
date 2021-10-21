@@ -1,0 +1,14 @@
+.p-page-contact {
+  padding-bottom: rem(120);
+}
+
+.p-page-contact__form {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+  @include mq(tab) {
+    max-width: rem(715);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
