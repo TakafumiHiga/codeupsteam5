@@ -1,0 +1,38 @@
+.p-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include mq(tab) {
+    flex-direction: row;
+  }
+}
+.p-nav__list {
+}
+.p-nav__list + .p-nav__list {
+  margin-top: rem(8);
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: rem(32);
+  }
+}
+.p-nav__list--sp {
+  display: block;
+  @include mq(tab) {
+    display: none;
+  }
+}
+.p-nav__list--pc {
+  display: none;
+  @include mq(tab) {
+    display: block;
+  }
+}
+.p-nav__link {
+  color: #fff;
+  font-size: rem(16);
+  display: block;
+  letter-spacing: 0.012em;
+  @include mq(tab) {
+    letter-spacing: 0.02em;
+  }
+}

@@ -1,0 +1,45 @@
+.p-archive-card {
+  width: 100%;
+  @include mq(tab) {
+    width: calc(50% - 48px * 1 / 2);
+  }
+}
+.p-archive-card:nth-child(2n) {
+  @include mq(tab) {
+    margin-left: rem(48);
+  }
+}
+.p-archive-card:not(:first-child) {
+  margin-top: rem(52);
+  @include mq(tab) {
+    margin-top: 0;
+  }
+}
+.p-archive-card:nth-child(n + 3) {
+  @include mq(tab) {
+    margin-top: rem(114);
+  }
+}
+
+.p-archive-card__image {
+  width: 100%;
+  padding-top: 66.4%;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.p-archive-card__title {
+  text-align: center;
+  padding-top: rem(33);
+  @include mq(tab) {
+    padding-top: rem(12);
+  }
+}
+.p-archive-card__category-wrapper {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+}
