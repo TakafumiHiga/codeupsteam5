@@ -4,12 +4,13 @@
 
 .p-works__point__heading {
   color: $background;
+  background-color: black;
   border: solid 1px $background;
   border-radius: rem(32);
   display: inline-block;
   position: absolute;
-  top: -57%;
-  left: 50%;
+  top: 0%;
+  left: 33%;
   transform: translate(-50%, -50%);
   padding-top: rem(8);
   padding-bottom: rem(9);

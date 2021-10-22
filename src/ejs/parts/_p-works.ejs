@@ -1,62 +1,7 @@
 <section class="p-works">
   <div class="p-works__container">
     <div class="p-works__inner">
-      <section class="p-works__swiper">
-        <div class="gallery">
-          <div class="swiper-container gallery-slider">
-            <!-- メイン -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="./dist/images/common/works-slider/works-single-slider.png"
-                  alt="ノートパソコン"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample002.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample003.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample004.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample005.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample006.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <!-- サムネイル -->
-          <div class="swiper-container gallery-thumbs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="sample001.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample002.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample003.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample004.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample005.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="sample006.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <%- include('./_p-works__point.ejs') %>
+      <%- include('./_p-swiper.ejs') %> <%- include('./_p-works__point.ejs') %>
     </div>
   </div>
 </section>
