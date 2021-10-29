@@ -1,0 +1,28 @@
+.p-information__list {
+  margin-bottom: rem(32);
+}
+.p-information__wrapper {
+  padding-top: rem(85);
+}
+
+.p-information__list__date {
+  margin-right: rem(29);
+  @include mq("tab") {
+    margin-right: rem(48);
+  }
+}
+
+.p-information__list__category {
+  width: rem(99);
+  @include mq("tab") {
+    margin-right: rem(61);
+  }
+}
+
+.p-information__list__text {
+  transition: all 0.3s;
+}
+
+.p-information__list__text:hover {
+  color: #f9f871;
+}
