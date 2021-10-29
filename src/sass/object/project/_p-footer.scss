@@ -1,0 +1,39 @@
+.p-footer {
+  background-color: #111;
+  padding-top: rem(53);
+  padding-bottom: rem(48);
+  @include mq(tab) {
+    padding-top: rem(32);
+    padding-bottom: rem(16);
+  }
+}
+.p-footer__logo {
+  max-width: rem(70);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  @include mq(tab) {
+    margin: 0;
+  }
+}
+.p-footer__content {
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-footer__navigation {
+  margin-top: rem(8);
+  @include mq(tab) {
+    margin-left: auto;
+  }
+}
+.p-footer__lists {
+}
+.p-footer__small {
+  text-align: center;
+  margin-top: rem(32);
+  @include mq(tab) {
+    margin-top: rem(75);
+  }
+}

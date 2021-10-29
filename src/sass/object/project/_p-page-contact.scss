@@ -1,15 +1,14 @@
-.l-footer {
+.p-page-contact {
+  padding-bottom: rem(120);
 }
 
-.l-footer__inner {
+.p-page-contact__form {
   max-width: rem(600);
   width: 100%;
   margin: 0 auto;
-  padding: 0 rem(20);
   @include mq(tab) {
-    max-width: rem(1266);
+    max-width: rem(715);
     width: 100%;
     margin: 0 auto;
-    padding: 0 rem(25);
   }
 }
