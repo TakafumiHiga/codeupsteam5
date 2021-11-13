@@ -86,6 +86,16 @@ jQuery('.p-header__drawer').on('click', function (e) {
 });
 
 
+//ドロワーメニューのaタグをクリックすると、ドロワメニューが左にはける。
+jQuery('.p-sp-nav__item a').on('click' ,function(e){
+  e.preventDefault();
+  jQuery('.p-header__drawer').removeClass('open');
+  jQuery('.p-header__sp-nav').removeClass('open');
+  jQuery('.p-drawer-background').removeClass('open');
+  return false;
+})
+
+
 
 jQuery('.related-message').hover(function(){
   $(this).toggleClass("is-hover-bg");
