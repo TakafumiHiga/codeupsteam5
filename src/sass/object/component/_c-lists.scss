@@ -7,7 +7,6 @@
 
 .c-list--left {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   @include mq("tab") {
   }
@@ -30,7 +29,7 @@
 
 .c-list__text {
   color: $background;
-  padding-top: rem(21);
+  padding-top: rem(16);
   @include mq("tab") {
     padding-top: 0;
   }

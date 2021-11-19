@@ -1,8 +1,7 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
-  var topBtn = $(".page-top");
-
+  var topBtn = $(".c-page-top");
   topBtn.hide();
 
   // ボタンの表示設定
@@ -37,11 +36,11 @@ jQuery(function ($) {
     }
   });
 
-  //ドロワーメニュー
-  $(".navbar_toggle").on("click", function () {
-    $(this).toggleClass("open");
-    $(".menu").toggleClass("open");
-  });
+  // //ドロワーメニュー
+  // $('.navbar_toggle').on('click', function () {
+  //   $(this).toggleClass('open');
+  //   $('.menu').toggleClass('open');
+  // });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on("click", 'a[href*="#"]', function () {
@@ -55,6 +54,21 @@ jQuery(function ($) {
   });
 });
 
+jQuery(".p-header__drawer").on("click", function (e) {
+  e.preventDefault();
+  jQuery(".p-header__drawer").toggleClass("open");
+  jQuery(".p-header__sp-nav").toggleClass("open");
+  jQuery(".p-drawer-background").toggleClass("open");
+  return false;
+});
+
+jQuery(".related-message").hover(function () {
+  $(this).toggleClass("is-hover-bg");
+  $(this).children(".p-related-message__title").toggleClass("is-hover-color");
+  $(this).children(".p-related-message__text ").toggleClass("is-hover-color");
+  $(this).find(".p-related-unit__date").toggleClass("is-hover-color");
+});
+
 //swiper
 
 //メイン
@@ -62,23 +76,17 @@ var slider = new Swiper(".gallery-slider", {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  loopedSlides: 6, //スライドの枚数と同じ値を指定
   navigation: {
-    nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
   },
 });
 
 //サムネイル
 var thumbs = new Swiper(".gallery-thumbs", {
-  slidesPerView: 1.5,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 5.5,
-    },
-  },
-  spaceBetween: 8,
+  slidesPerView: "auto",
+  spaceBetween: 10,
   centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
