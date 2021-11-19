@@ -3,16 +3,11 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_top-header') %> <%-
-    include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %> <%-
-    include('./common/_footer') %> <% for (var i=0; i < 4; i++) { %> <%-
-    include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %> <% } %>
-
-    <main>
-      <%- include('./parts/_p-complete.ejs') %> <%-
-      include('./parts/_p-not-found.ejs') %> <%-
-      include('./parts/_p-information.ejs') %> <%-
-      include('./parts/_p-works.ejs')%> <%-
-      include('./parts/_c-pagenation.ejs')%>
-    </main>
+    include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %> <% for (var
+    i=0; i < 4; i++) { %> <%- include('./parts/_c-btn',{text:'これはテストです',
+    link:'#'}) %> <% } %> <%- include('./common/_header') %> <%-
+    include('./parts/_p-swiper') %> <%- include('./parts/_p-contact') %> <%-
+    include('./common/_footer') %> <%- include('./parts/_c-page-top',{link:'#'})
+    %>
   </body>
 </html>
