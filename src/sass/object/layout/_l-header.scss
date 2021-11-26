@@ -1,7 +1,7 @@
 
 .l-header{
   height: rem(50);
-  line-height: rem(50);
+  line-height: 1;
   width:100%;
   position:fixed;
   z-index:1000;
@@ -44,6 +44,7 @@
   display:none; 
   @include mq('tab'){
     display:flex;
+    align-items: center;
   } 
 }
   

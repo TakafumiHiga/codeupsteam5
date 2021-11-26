@@ -2,171 +2,24 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 <body>
-    <section class="l-blog-archive p-blog-archive">
-        <div class="l-inner">
-            <div class="p-blog-archive__category">
-                <%- include('./parts/_p-archive__lists') %>
+<%- include('./common/_header') %>
+<%- include('./common/_category-top') %>
+    <main>
+        <section class="l-blog-archive p-blog-archive">
+            <div class="l-inner">
+                <%- include('./parts/_c-breadcrumb') %>
+                <div class="p-blog-archive__category">
+                    <%- include('./parts/_c-category__list') %>
+                </div>
+                <div class="p-blog-archive__cards">
+                    <%- include('./parts/_p-cards') %>
+                </div>
+            <div class="p-blog-archive__pager">
+                <%- include('./parts/_p-pager') %>
             </div>
-            <ul class="p-blog-archive__cards p-cards">
-                <li class="p-cards__item p-card p-card--new">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-1.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-2.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-3.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-4.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#"">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-5.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#"">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-6.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-7.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#"">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-8.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="p-cards__item p-card">
-                    <a href="#">
-                        <figure class="p-card__image">
-                            <img src="./images/common/blog-archive/blog-archive-9.jpg" alt="ブログ記事アイキャッチ">
-                        </figure>
-                        <div class="p-card__contents-wrapper">
-                            <div class="p-card__contents">
-                                <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-                                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                            </div>
-                            <div class="p-card__meta">
-                                <div class="p-card__category">カテゴリ</div>
-                                <time class="p-card__time" datetime="2021-07-20">2021.07.20</time>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        <div class="p-blog-archive__pager">
-            <%- include('./parts/_p-pager') %>
-        </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 <%- include('./parts/_p-contact') %>
 <%- include('./common/_footer') %>
 <%- include('./parts/_c-page-top',{link:'#'}) %>

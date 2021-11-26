@@ -2,63 +2,57 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
-   
-    
       <%- include('./common/_header') %>
-
       <%- include('./common/_category-top') %>
     <main class="c-bg-color">
-      
+      <div class="l-inner">
       <%- include('./parts/_c-breadcrumb') %>
-
-     <div class="p-overview-main u-overview-main_margin-top">
-       <dl class="p-overview-main__items p-overview-items">
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">会社名</dt>
-           <dd class="c-overview-item__desc">株式会社CodeUps</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">設立</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">資本金</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">売上高</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">代表者</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">従業員数</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。</dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">事業内容</dt>
-           <dd class="c-overview-item__desc">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-            
-            
-           </dd>
-         </div>
-         <div class="p-overview-items__item c-overview-item">
-           <dt class="c-overview-item__term">所在地</dt>
-           <dd class="c-overview-item__desc">東京駅</dd>
-         </div>
-       </dl>
-       
-       <div class="p-map u-map_margin-top"> 
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975468368!2d139.743244215033!3d35.65858048019962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1633528060216!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        
       </div>
-
-
-    </main> 
-
-
+      <div class="p-overview-main u-overview-main_margin-top">
+        <dl class="p-overview-main__items p-overview-items">
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">会社名</dt>
+            <dd class="c-overview-item__desc">株式会社CodeUps</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">設立</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">資本金</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">売上高</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">代表者</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">従業員数</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。</dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">事業内容</dt>
+            <dd class="c-overview-item__desc">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+             
+             
+            </dd>
+          </div>
+          <div class="p-overview-items__item c-overview-item">
+            <dt class="c-overview-item__term">所在地</dt>
+            <dd class="c-overview-item__desc">東京駅</dd>
+          </div>
+        </dl>
+        <div class="p-map u-map_margin-top"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975468368!2d139.743244215033!3d35.65858048019962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1633528060216!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+       </div>
+    </main>
+    <%- include('./parts/_p-contact') %>
+    <%- include('./common/_footer') %>
+    <%- include('./parts/_c-page-top',{link:'#'}) %>
   </body>
 </html>
