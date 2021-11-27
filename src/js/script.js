@@ -72,7 +72,7 @@ jQuery(".related-message").hover(function () {
 //swiper
 
 //メイン
-var slider = new Swiper(".gallery-slider", {
+var slider = new Swiper(".js-gallery-slider", {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
@@ -84,7 +84,7 @@ var slider = new Swiper(".gallery-slider", {
 });
 
 //サムネイル
-var thumbs = new Swiper(".gallery-thumbs", {
+var thumbs = new Swiper(".js-gallery-thumbs", {
   slidesPerView: "auto",
   spaceBetween: 10,
   centeredSlides: true,

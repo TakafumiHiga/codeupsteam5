@@ -6,23 +6,23 @@
 }
 
 //メイン
-.gallery-slider {
+.js-gallery-slider {
   width: 100%;
   height: auto;
   margin: 0 0 10px 0;
 }
-.gallery-slider .swiper-slide {
+.js-gallery-slider .swiper-slide {
   width: auto;
   height: 400px;
   position: relative;
 }
 
-.gallery-slider .swiper-slide::before {
+.js-gallery-slider .swiper-slide::before {
   content: "";
   position: absolute;
   padding-top: 53.4418%;
 }
-.gallery-slider .swiper-slide img {
+.js-gallery-slider .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -35,23 +35,23 @@
 }
 
 //サムネイル
-.gallery-thumbs {
+.js-gallery-thumbs {
   width: 100%;
   padding: 0;
   overflow: hidden;
 }
-.gallery-thumbs .swiper-slide {
+.js-gallery-thumbs .swiper-slide {
   width: 100px;
   height: 100px;
   text-align: center;
   overflow: hidden;
   opacity: 0.2;
 }
-.gallery-thumbs .swiper-slide-active {
+.js-gallery-thumbs .swiper-slide-active {
   opacity: 1;
 }
 
-.gallery-thumbs .swiper-slide-active img {
+.js-gallery-thumbs .swiper-slide-active img {
   width: auto;
   height: 100%;
 }
