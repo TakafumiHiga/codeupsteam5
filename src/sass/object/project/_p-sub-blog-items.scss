@@ -1,0 +1,6 @@
+.p-sub-blog-items {
+  @include mq("tab") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
