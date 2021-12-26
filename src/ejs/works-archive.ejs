@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+<%- include('./common/_header') %>
+<%- include('./common/_category-top') %>
+<div class="l-works-archive p-works-archive">
+    <div class="l-inner">
+        <%- include('./compornent/_c-breadcrumb') %>
+        <div class="p-works-archive__category">
+            <%- include('./compornent/_c-category__list') %>
+        </div>
+    </div>
+    <div class="l-works-archive__inner">
+        <div class="p-works-archive__cards">
+            <%- include('./parts/_p-archive-cards') %>
+        </div>
+    </div>
+    <div class="l-pager p-pager">
+        <div class="l-inner">
+            <%- include('./parts/_p-pager') %>
+        </div>
+    </div>
+</div>
+<%- include('./parts/_p-contact') %>
+<%- include('./common/_footer') %>
+<%- include('./compornent/_c-page-top',{link:'#'}) %>
+</body>
+</html>

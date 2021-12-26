@@ -1,0 +1,66 @@
+// ギャラリー
+.gallery {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+//メイン
+.js-gallery-slider {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+.js-gallery-slider .swiper-slide {
+  width: auto;
+  height: 400px;
+  position: relative;
+}
+
+.js-gallery-slider .swiper-slide::before {
+  content: "";
+  position: absolute;
+  padding-top: 53.4418%;
+}
+.js-gallery-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+//サムネイル
+.js-gallery-thumbs {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.js-gallery-thumbs .swiper-slide {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.2;
+}
+.js-gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+.js-gallery-thumbs .swiper-slide-active img {
+  width: auto;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+}
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  display: none;
+}

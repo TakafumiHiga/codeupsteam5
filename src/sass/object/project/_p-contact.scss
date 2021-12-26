@@ -1,0 +1,62 @@
+.p-contact {
+    background-color: #3d3d3d;
+    padding-top: rem(64);
+    padding-bottom: rem(64);
+    @include mq(tab) {
+      padding-top: rem(148);
+      padding-bottom: rem(150);
+    }
+  }
+  .p-contact__title {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: rem(25);
+    position: relative;
+    @include mq(tab) {
+      font-size: rem(30);
+    }
+  }
+  .p-contact__title::after {
+    position: absolute;
+    content: "contact";
+    text-transform: capitalize;
+    transform: translateX(-50%);
+    color: rgba($color: #f9f871, $alpha: 0.3);
+    top: -97%;
+    left: 50%;
+    font-size: rem(50);
+    font-family: $font-family-sub;
+    @include mq(tab) {
+      font-size: rem(110);
+      letter-spacing: rem(2);
+      top: -200%;
+      left: 16%;
+      padding-left: rem(20);
+    }
+  }
+  .p-contact__content {
+    font-family: "Noto Sans JP";
+    color: #fff;
+    @include mq(tab) {
+      max-width: rem(534);
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .p-contact__text {
+    font-size: rem(16);
+    letter-spacing: rem(2);
+    margin-top: rem(16);
+    @include mq(tab) {
+      margin-top: rem(24);
+    }
+  }
+  .p-contact__btn {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq(tab) {
+      margin-top: rem(50);
+    }
+  }
+  

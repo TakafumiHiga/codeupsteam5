@@ -1,0 +1,12 @@
+.pagenation__wrapper {
+  text-align: center;
+  display: flex;
+}
+
+.prev,
+.archive,
+.next {
+  display: block;
+  border: solid white rem(1);
+  color: white;
+}

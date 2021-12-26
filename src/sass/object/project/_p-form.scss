@@ -1,0 +1,68 @@
+.p-form {
+}
+.p-form__error-wrapper {
+  text-align: center;
+}
+.p-form__error {
+  color: #ff5757;
+  letter-spacing: 0.13em;
+}
+.p-form__row-wrapper {
+  margin-top: rem(10);
+  @include mq(tab) {
+    margin-top: rem(30);
+  }
+}
+.p-form__row {
+  margin-top: rem(30);
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-form__row:first-child {
+  @include mq(tab) {
+    margin-top: 0;
+  }
+}
+.p-form__row + .p-form__row {
+  margin-top: rem(35);
+  @include mq(tab) {
+    margin-top: rem(42);
+  }
+}
+.p-form__row--textarea {
+  margin-top: rem(32);
+  @include mq(tab) {
+    display: flex;
+    margin-top: rem(47);
+  }
+}
+.p-form__row--textarea-title{
+  @include mq(tab){
+    margin-top: rem(10);
+  }
+}
+.p-form__label {
+  font-size: rem(14);
+  color: #fff;
+  line-height: 1.71428;
+  letter-spacing: 0.07em;
+  @include mq(tab) {
+    width: rem(156);
+    text-align: right;
+    margin-right: rem(24);
+  }
+}
+.p-form__description {
+  width: 100%;
+  margin-top: rem(18);
+  @include mq(tab) {
+    width: calc(100% - 156px);
+    margin-top: 0;
+  }
+}
+.p-form__submit {
+  margin-top: rem(42);
+  text-align: center;
+}

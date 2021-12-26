@@ -1,0 +1,33 @@
+body {
+  background-color: #111111;
+}
+
+//コンポーネント化する？
+.p-complete__wrapper {
+  text-align: center;
+  padding-top: rem(150);
+}
+
+.p-complete__heading {
+  font-size: rem(20);
+  color: $background;
+  letter-spacing: rem(2);
+  line-height: rem(2);
+  @include mq("tab") {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
+}
+
+.p-complete__reply {
+  font-size: rem(20);
+  padding-top: rem(80);
+  color: $background;
+  line-height: rem(29);
+  letter-spacing: rem(2);
+  @include mq("tab") {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
+}
+

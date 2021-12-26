@@ -1,0 +1,23 @@
+.p-sub-blog-item {
+  @include mq("tab") {
+    width: calc(25% - 32px * 3 / 4);
+  }
+}
+
+.p-sub-blog-item:not(:first-child) {
+  margin-top: rem(24);
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: rem(24);
+  }
+}
+.p-sub-blog-item:nth-child(4n + 1) {
+  @include mq(tab) {
+    margin-left: 0;
+  }
+}
+.p-sub-blog-item:nth-child(n + 5) {
+  @include mq(tab) {
+    margin-top: rem(48);
+  }
+}

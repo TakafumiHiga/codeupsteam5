@@ -1,0 +1,48 @@
+.c-detail-page{
+  
+}
+
+.c-detail-page__unit{
+  margin-top:rem(80);
+  @include mq('tab'){
+    margin-top:rem(104);
+   } 
+}
+
+.p-unit{
+  color:#fff;
+  //  text-align:center;
+  display:flex;
+  justify-content:center;
+}
+
+.p-unit__list + 
+.p-unit__list{
+  margin-left:rem(48);
+}
+
+.p-list-common{
+  border:1px solid #fff;
+  font-size:rem(16);
+  line-height:1.4481;
+  letter-spacing:rem(2);
+  height:rem(24);
+  display:inline-block;
+  transition:all 0.3s ease 0s;
+}
+
+.p-list-common:hover{
+  background-color:#fff;
+  color:#111;
+}
+
+.u-list-prev__a{
+  padding:0 rem(13);
+}
+.u-list-list__a{
+  padding:0 rem(17) 0 rem(23);
+}
+.u-list-next__a{
+  padding:0 rem(13);
+}
+

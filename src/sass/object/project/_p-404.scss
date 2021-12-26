@@ -1,0 +1,34 @@
+body {
+  background-color: #111111;
+}
+
+//コンポーネント化する？
+.p-not-found__wrapper {
+  text-align: center;
+  padding-top: rem(150);
+}
+
+.p-not-found__heading {
+  font-size: rem(32);
+  color: $background;
+  letter-spacing: rem(2);
+  line-height: rem(2);
+  color: #ffea2e;
+  opacity: 0.3;
+  @include mq("tab") {
+    font-size: rem(60);
+    line-height: rem(35);
+  }
+}
+
+.p-not-found {
+  font-size: rem(20);
+  padding-top: rem(80);
+  color: $background;
+  line-height: rem(29);
+  letter-spacing: rem(2);
+  @include mq("tab") {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
+}
