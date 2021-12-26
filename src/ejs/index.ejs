@@ -4,10 +4,12 @@
   <body>
     <%- include('./common/_header') %>
   <main>
-    <% for (var i=0; i < 4; i++) { %>
-    <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <% } %>
-    <%- include('./parts/_p-contact') %>
+    <div class="l-mv">
+      <%- include('./parts/_p-mv') %>
+    </div>
+    <div class="l-contact">
+      <%- include('./parts/_p-contact') %>
+    </div>
   </main>
     <%- include('./common/_footer') %>
     <%- include('./parts/_c-page-top',{link:'#'}) %>
