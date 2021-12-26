@@ -1,153 +1,132 @@
-.c-bg-color{
-  background-color:#111;
+.p-content{
+  position:relative;
 }
 
-.p-philosophy{
-  color:#fff;
-}
-.p-philosophy__header{
-  text-align:center;
-  margin-top:rem(85);
-  padding:0 $padding-sp;
-  letter-spacing: rem(2);
-  @include mq('tab'){
-    padding:0;
-     width:45.9%;
-     margin:rem(69) auto 0;
-  }
-}
-
-.p-philosophy__title{
-  font-size:rem(20);
-}
-
-.p-philosophy__text{
-  text-align:left;
-  font-size: rem(16);
-  line-height: rem(23.17);
-  margin-top:rem(24);
-
-  @include mq('tab'){
-    width:100%;
-  }
-}
-
-.p-philosophy__body{
-  margin-top: rem(80);
-  @include mq('tab'){
-    margin:rem(150) auto 0;
-   width:100%;
-   max-width:rem(1090);
-  }
-}
-
-.p-philosophy-main__margin-top{
-  margin-top: rem(80);
-  @include mq('tab'){
-    margin-top: rem(150);
-  }
-}
-
-.p-philosophy__content + .p-philosophy__content{
-    margin-top:rem(48);
-    @include mq('tab'){
-      margin-top:rem(104);
-    }
-}
-
-.p-philosophy-block01{
-    @include mq('tab'){
-      display:flex;
-    }
-}
-
-.p-philosophy-block02{
-    @include mq('tab'){
-      display:flex;
-      flex-direction:row-reverse;
-    }
-}
-
-.p-philosophy-block03{
-    @include mq('tab'){
-      display:flex;
-    }
-}
-
-
-.p-philosophy-block__img{
-     position:relative;
-     padding-top:69.786%;
-  
-    @include mq('tab'){
-      position:static;
-      width:50.45%;
-      padding-top:0;
-  
-    }
-}
-
-.p-philosophy-block__img img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    @include mq('tab'){
-      position:static;
-    }
-}
-
-
-
-.p-philosophy-block__message{
-    padding:0 $padding-sp;
-    margin-top:rem(24);
-    @include mq('tab'){
-     padding:0;
-     width:46.78899%;
-     margin-left:2.75% ;
-     margin-top: 0;
-    }
-
-}
-
-.p-philosophy-block__message_two{
-    @include mq('tab'){
-      margin-left:0 ;
-      margin-right:2.75%;
-    }
-}
-
-.p-philosophy-message__title{
-    text-align:center;
-    font-size:rem(20);
-    line-height:1.448;
-    letter-spacing:rem(2);
-    @include mq('tab'){
-      text-align:left;
-      font-size:rem(25);
-      letter-spacing:rem(0.5);
-    }
-}
-
-.p-philosophy-message__text{
-     font-size:rem(16);
-     line-height:1.4481;
-     letter-spacing:rem(2);
-     margin-top:rem(24);
+.p-content::before{
+  content:"";
+    position: absolute;
+    // width:rem(1714);
+    height:rem(1);
+    left:rem(0);
+    background-color: #F9F871;
+    transform-origin: 0 0;
+    z-index: -50;
+    top:4.5rem;
+    transform:rotate(61.09deg);
+    width: (776 / 375) * 100vw;
     
-     @include mq('tab'){
-      line-height: 2.1875;
-      margin-top: rem(40);
+    @include mq(tab){
+      top:-7rem;
+      width:(1800 / 1280) * 100vw;
+      transform: rotate(45deg);
     }
+}
+.p-content__title {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: rem(25);
+  position: relative;
+  @include mq(tab) {
+    font-size: rem(30);
+  }
+}
+.p-content__title::after {
+  position: absolute;
+  content: "content";
+  text-transform: capitalize;
+  transform: translateX(-50%);
+  color: rgba($color: #f9f871, $alpha: 0.3);
+  top: -97%;
+  left: 50%;
+  font-size: rem(50);
+  font-family: $font-family-sub;
+  @include mq(tab) {
+    font-size: rem(110);
+    letter-spacing: rem(2);
+    top: -200%;
+    left: 16%;
+    padding-left: rem(20);
+  }
 }
 
 
 
+.p-content-items{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+
+}
+
+.p-content__wrapper{
+  margin-top:2.7rem;
+  @include mq(tab){
+    margin-top:2rem;
+  }
+
+}
+
+.p-content-items__item{
+  width:50%;
+  @include mq(tab){
+  width:25%;
+}
+}
+
+.p-content-items__item a{
+  position:relative;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  overflow: hidden;
+  transition:0.5s ease ;
+  padding-top:86.4%;
+  @include mq(tab){
+  padding-top: 98.128%;
+}
+}
 
 
+.p-content-items__item a:hover::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:#fff;
+opacity:0.3;
+}
 
+.p-content-item__img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
 
+.p-content-item__img img{
+width:100%;
+height:100%;
+}
 
-
+.p-content-item__title{
+position:absolute;
+left:0;
+top:50%;
+width:100%;
+display:inline-block;
+text-align:center;
+transform:translateY(-50%);
+line-height: rem(28.96);
+font-size: rem(20);
+letter-spacing: rem(2);
+color:#fff;
+@include mq(tab){
+  font-size: rem(25);
+  letter-spacing: rem(0.5);
+ 
+}
+}
