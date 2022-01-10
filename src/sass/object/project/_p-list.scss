@@ -1,0 +1,48 @@
+.p-list:not(:last-child) {
+  padding-bottom: rem(32);
+}
+
+.p-list a {
+  display: block;
+  transition: all 0.3s;
+  @include mq("tab") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-list a:hover .p-list__text {
+  color: #f9f871;
+}
+
+.p-list__left {
+  display: flex;
+  align-items: center;
+  @include mq("tab") {
+  }
+}
+
+.p-list__date {
+  font-size: rem(16);
+  color: $background;
+  margin-right: rem(29);
+  @include mq("tab") {
+    margin-right: rem(48);
+  }
+}
+
+.p-list__category {
+  @include mq("tab") {
+    margin-right: rem(61);
+  }
+}
+
+.p-list__text {
+  color: $background;
+  padding-top: rem(16);
+  max-width: rem(572);
+  width: 100%;
+  @include mq("tab") {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,50 @@
+.p-page-navi {
+  display: flex;
+  justify-content: space-between;
+  max-width: rem(332);
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+.p-page-navi__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.p-page-navi__current {
+  line-height: 1;
+}
+
+.p-page-navi__current:not(:last-child) {
+  margin-right: rem(16);
+}
+
+.p-page-navi__prev,
+.p-page-navi__next,
+.p-page-navi__current a {
+  display: inline-block;
+  transition: all 0.3s;
+  color: $background;
+  border: solid 1px $background;
+}
+
+.p-page-navi__prev,
+.p-page-navi__next {
+  padding-left: rem(13);
+  padding-right: rem(13);
+}
+
+.p-page-navi__current.active a {
+  color: $text-color;
+  border: solid 1px transparent;
+  background-color: $background;
+}
+
+.p-page-navi__current a {
+  padding: rem(3) rem(7) rem(5);
+}
+
+.p-page-navi__current a:hover {
+  background: $background;
+  color: $text-color;
+}

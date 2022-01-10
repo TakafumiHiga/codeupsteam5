@@ -1,4 +1,8 @@
 .l-footer {
+  padding-top: rem(120);
+  @include mq("tab") {
+    padding-top: rem(150);
+  }
 }
 
 .l-footer__inner {
