@@ -1,8 +1,6 @@
-body {
-  background-color: #111111;
-}
 
-//コンポーネント化する？
+
+
 .p-not-found__wrapper {
   text-align: center;
   padding-top: rem(150);
@@ -31,4 +29,8 @@ body {
     font-size: rem(30);
     line-height: rem(35);
   }
+}
+
+.p-not-found__btn {
+  margin-top: rem(80);
 }

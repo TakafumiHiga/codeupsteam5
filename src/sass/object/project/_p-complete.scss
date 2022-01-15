@@ -1,8 +1,5 @@
-body {
-  background-color: #111111;
-}
 
-//コンポーネント化する？
+
 .p-complete__wrapper {
   text-align: center;
   padding-top: rem(150);
@@ -31,3 +28,6 @@ body {
   }
 }
 
+.p-complete__btn {
+  margin-top: rem(80);
+}
