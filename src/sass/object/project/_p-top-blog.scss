@@ -1,0 +1,39 @@
+.p-top-blog {
+}
+.p-top-blog__title-wrapper {
+  text-align: center;
+}
+.p-top-blog__title-wrapper::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "blog";
+  font-family: $font-family-sub;
+  color: #f9f871;
+  opacity: 0.2;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  font-size: rem(50);
+  margin-top: -10.5%;
+  @include mq(tab) {
+    right: (105 / 1280) * 100vw;
+    margin-top: -3.5%;
+    font-size: (110 / 1280) * 100vw;
+    transform: translateX(0%);
+  }
+}
+.p-top-blog__content {
+  margin-top: rem(24);
+  @include mq(tab) {
+    margin-top: rem(48);
+  }
+}
+.p-top-blog__btn-wrapper {
+  margin-top: initial;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  @include mq(tab) {
+    margin-top: rem(75);
+  }
+}
