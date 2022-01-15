@@ -96,3 +96,25 @@ var thumbs = new Swiper(".js-gallery-thumbs", {
 //メインとサムネイルを紐づける
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
+
+const swiperWorks = new Swiper('.swiperWorks', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: false,
+  centeredSlides: true,
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  });

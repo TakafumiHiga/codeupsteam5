@@ -7,9 +7,19 @@
     <% for (var i=0; i < 4; i++) { %>
     <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
     <% } %>
-    <%- include('./parts/_p-contact') %>
+    <div class="l-top-works">
+      <%- include('./parts/_p-top-works') %>
+    </div>
+    <div class="l-top-overview">
+      <%- include('./parts/_p-top-overview') %>
+    </div>
+    <div class="l-contact">
+      <%- include('./parts/_p-contact') %>
+    </div>
   </main>
+  <div class="l-footer">
     <%- include('./common/_footer') %>
+  </div>
     <%- include('./parts/_c-page-top',{link:'#'}) %>
   </body>
 </html>
