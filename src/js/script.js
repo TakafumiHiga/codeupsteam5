@@ -97,6 +97,7 @@ var thumbs = new Swiper(".js-gallery-thumbs", {
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
 
+
 //メインヴィジュアルスライダー//
 
 let swipeOption = {
@@ -113,3 +114,26 @@ let swipeOption = {
   }
 }
 new Swiper('.swiper-container', swipeOption);
+
+const swiperWorks = new Swiper('.swiperWorks', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: false,
+  centeredSlides: true,
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  });
+
