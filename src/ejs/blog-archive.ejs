@@ -7,9 +7,9 @@
     <main>
         <section class="l-blog-archive p-blog-archive">
             <div class="l-inner">
-                <%- include('./parts/_c-breadcrumb') %>
+                <%- include('./compornent/_c-breadcrumb') %>
                 <div class="p-blog-archive__category">
-                    <%- include('./parts/_c-category__list') %>
+                    <%- include('./compornent/_c-category__list') %>
                 </div>
                 <div class="p-blog-archive__cards">
                     <%- include('./parts/_p-cards') %>
@@ -20,8 +20,10 @@
             </div>
         </section>
     </main>
-<%- include('./parts/_p-contact') %>
+    <div class="l-contact">
+        <%- include('./parts/_p-contact') %>
+    </div>
 <%- include('./common/_footer') %>
-<%- include('./parts/_c-page-top',{link:'#'}) %>
+<%- include('./compornent/_c-page-top',{link:'#'}) %>
 </body>
 </html>
