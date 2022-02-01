@@ -1,0 +1,6 @@
+.p-top-cards {
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
