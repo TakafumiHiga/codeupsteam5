@@ -3,59 +3,70 @@
 <%- include('./common/_head') %>
   <body>
       <%- include('./common/_header') %>
-      <main class="c-bg-color p-bg-color_blog-detail">
-        <%- include('./compornent/_c-breadcrumb') %>
-        <div class="p-blog-detail u-blog-detail_margin-top">
-          <h1 class="p-blog-detail__title u-blog-detail_margin">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h1>
-          <div class="p-blog-detail__abuot p-about u-blog-detail_margin">
-            <p class="p-about__date">2020/06/13</p>
-            <p class="p-about__cat">カテゴリ１</p>
+      <div class="l-single">
+        <div class="p-single">
+          <div class="l-single-inner">
+          <%- include('./parts/compornent/_c-breadcrumb') %>
+          <div class="p-single__content">
+            <div class="p-single__title-wrapper">
+              <h2 class="p-single__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+            </div>
           </div>
-          <div class="p-blog-detail__img01">
+          <div class="p-single__meta-wrapper">
+            <%- include('./parts/compornent/_c-meta') %>
+          </div>
+          <figure class="p-single__img">
             <img src="images/common/blog-single/blog-single1.png" alt="blog-single1">
+          </figure>
+          <div class="p-single__text">
+            <p class="c-single-text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
           </div>
-          
-          <p class="c-blog-detail__text p-blog-detail_text01 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <h2 class="p-blog-detail__head01 u-blog-detail_margin">見出し２</h2>
-          <p class="c-blog-detail__text p-blog-detail_text02 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <h2 class="p-blog-detail__head02 u-blog-detail_margin"><span class="u-blog-detail__border-yellow">見出し３</span>見出し３見出し３</h2>
-          <p class="c-blog-detail__text p-blog-detail_text03 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-          <div class="p-blog-detail__img02">
-            <img src="images/common/blog-single/blog-single2.png" alt="blog-single2">
+
+            
+            <p class="c-blog-detail__text p-blog-detail_text01 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <h2 class="p-blog-detail__head01 u-blog-detail_margin">見出し２</h2>
+            <p class="c-blog-detail__text p-blog-detail_text02 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <h2 class="p-blog-detail__head02 u-blog-detail_margin"><span class="u-blog-detail__border-yellow">見出し３</span>見出し３見出し３</h2>
+            <p class="c-blog-detail__text p-blog-detail_text03 u-blog-detail_margin">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <div class="p-blog-detail__img02">
+              <img src="images/common/blog-single/blog-single2.png" alt="blog-single2">
+            </div>
+            <ul class="c-blog-detail__list p-blog-detail_list01 u-blog-detail_margin">
+              <li>
+                <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+            </ul>
+            
+            <ol class="c-blog-detail__list p-blog-detail_list02 u-blog-detail_margin">
+              <li>
+                <p>１リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>２リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>３リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+              <li>
+                <p>４リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
+              </li>
+            </ol> 
           </div>
-          <ul class="c-blog-detail__list p-blog-detail_list01 u-blog-detail_margin">
-            <li>
-              <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-          </ul>
+          <%- include('./parts/compornent/_c-detail-page') %>
+          <%- include('./parts/compornent/_c-detail-related') %>
           
-          <ol class="c-blog-detail__list p-blog-detail_list02 u-blog-detail_margin">
-            <li>
-              <p>１リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>２リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>３リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-            <li>
-              <p>４リストが入ります。リストが入ります。リストが入ります。リストが入ります。</p>
-            </li>
-          </ol> 
-        </div>
-        <%- include('./compornent/_c-detail-page') %>
-        <%- include('./compornent/_c-detail-related') %>
-        
-      </main> 
+        </div> 
+      </div>
     </body>
   </html>
