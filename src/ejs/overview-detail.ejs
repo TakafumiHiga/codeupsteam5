@@ -4,14 +4,21 @@
   <body>
     <%- include('./common/_header') %>
     <main>
-      <%- include('./parts/_p-works-swiper.ejs') %> <%-
-      include('./parts/_p-works-points.ejs') %> <%-
-      include('./parts/_p-sub-blog-items.ejs') %>
+      <div class="l-inner">
+        <section class="l-works-swiper">
+          <%- include('./parts/_p-works-swiper.ejs') %>
+        </section>
+        <section class="l-works-points">
+          <%- include('./parts/_p-works-point.ejs') %>
+        </section>
+        <section class="l-sub-blog-items">
+          <%- include('./parts/_p-sub-blog-items.ejs') %>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <%- include('./parts/_p-contact') %>
-      <%- include('./common/_footer') %>
+      <%- include('./parts/_p-contact') %> <%- include('./common/_footer') %>
     </footer>
   </body>
 </html>

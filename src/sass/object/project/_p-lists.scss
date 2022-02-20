@@ -1,0 +1,54 @@
+.p-list__item:not(:last-child) {
+  margin-bottom: rem(32);
+}
+.p-list__item a {
+  display: block;
+  @include mq("tab") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-list__left {
+  display: flex;
+  align-items: center;
+  @include mq("tab") {
+  }
+}
+
+.p-list__date {
+  font-size: rem(16);
+  color: $background;
+  margin-right: rem(30);
+  @include mq("tab") {
+    margin-right: rem(48);
+  }
+}
+
+.p-list__category {
+  font-size: rem(14);
+  line-height: rem(20);
+  border: solid 1px $background;
+  color: $background;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: rem(6) rem(22);
+  text-align: center;
+  @include mq("tab") {
+    margin-right: rem(60);
+    width: rem(100);
+  }
+}
+
+.p-list__text {
+  color: $background;
+  padding-top: rem(16);
+  transition: all 0.3s;
+  @include mq("tab") {
+    padding-top: 0;
+  }
+}
+
+.p-list__text:hover {
+  color: #f9f871;
+}

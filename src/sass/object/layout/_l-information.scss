@@ -1,0 +1,8 @@
+.l-information {
+  padding-top: rem(85);
+  padding-bottom: rem(120);
+  @include mq("tab") {
+    padding-top: rem(70);
+    padding-bottom: rem(104);
+  }
+}
