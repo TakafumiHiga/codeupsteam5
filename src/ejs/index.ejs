@@ -4,17 +4,12 @@
   <body>
     <%- include('./common/_header') %>
     <main>
-      <div class="l-mv"><%- include('./parts/_p-mv') %></div>
+      <div class="l-mv"><%- include('./parts/project/_p-mv') %></div>
       <div class="l-news"><%- include('./parts/_p-news') %></div>
       <div class="l-content"><%- include('./parts/_p-content') %></div>
-      <div class="l-top-works"><%- include('./parts/_p-top-works') %></div>
-      <div class="l-top-overview">
-        <%- include('./parts/_p-top-overview') %>
-      </div>
-      <div class="l-top-blog"><%- include('./parts/_p-top-blog') %></div>
-      <div class="l-contact"><%- include('./parts/_p-contact') %></div>
+      <div class="l-contact"><%- include('./parts/project/_p-contact') %></div>
     </main>
-    <%- include('./compornent/_c-page-top',{link:'#'}) %>
-    <div class="l-footer"><%- include('./common/_footer') %></div>
+    <%- include('./common/_footer') %> <%-
+    include('./parts/compornent/_c-page-top',{link:'#'}) %>
   </body>
 </html>

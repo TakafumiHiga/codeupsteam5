@@ -7,23 +7,23 @@
     <main>
         <section class="l-blog-archive p-blog-archive">
             <div class="l-inner">
-                <%- include('./compornent/_c-breadcrumb') %>
+                <%- include('./parts/compornent/_c-breadcrumb') %>
                 <div class="p-blog-archive__category">
-                    <%- include('./compornent/_c-category__list') %>
+                    <%- include('./parts/compornent/_c-category__list') %>
                 </div>
                 <div class="p-blog-archive__cards">
-                    <%- include('./parts/_p-cards') %>
+                    <%- include('./parts/project/_p-cards') %>
                 </div>
             <div class="p-blog-archive__pager">
-                <%- include('./parts/_p-pager') %>
+                <%- include('./parts/project/_p-pager') %>
             </div>
             </div>
         </section>
     </main>
     <div class="l-contact">
-        <%- include('./parts/_p-contact') %>
+        <%- include('./parts/project/_p-contact') %>
     </div>
 <%- include('./common/_footer') %>
-<%- include('./compornent/_c-page-top',{link:'#'}) %>
+<%- include('./parts/compornent/_c-page-top',{link:'#'}) %>
 </body>
 </html>

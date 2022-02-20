@@ -1,11 +1,4 @@
-.c-text__detail {
+.c-text {
   font-size: rem(16);
-  color: #fff;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  font-weight: normal;
-  @include mq(tab) {
-    letter-spacing: 0.05em;
-    line-height: 2.1875;
-  }
+  letter-spacing: rem(2);
 }
