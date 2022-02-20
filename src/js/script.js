@@ -78,8 +78,8 @@ var slider = new Swiper(".js-gallery-slider", {
   loop: true,
   loopedSlides: 6, //スライドの枚数と同じ値を指定
   navigation: {
-    prevEl: ".swiper-button-prev",
-    nextEl: ".swiper-button-next",
+    prevEl: ".js-works-prev",
+    nextEl: ".js-works-next",
   },
 });
 
@@ -97,27 +97,45 @@ var thumbs = new Swiper(".js-gallery-thumbs", {
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
 
-
 //メインヴィジュアルスライダー//
+
+// var mySwiper = new Swiper(".mv-swiper-container", {
+//   loop: true,
+//   effect: "fade",
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   speed: 2000,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 let swipeOption = {
   loop: true,
-  effect: 'fade',
+  effect: "fade",
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
   },
   speed: 2000,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
-  }
-}
-new Swiper('.swiper-container', swipeOption);
+  },
+};
+new Swiper(".swiper-container", swipeOption);
 
-const swiperWorks = new Swiper('.swiperWorks', {
+const swiperWorks = new Swiper(".swiperWorks", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 30,
   loop: false,
@@ -128,12 +146,11 @@ const swiperWorks = new Swiper('.swiperWorks', {
       slidesPerView: 1,
       spaceBetween: 30,
     },
-    },
+  },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  });
-
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});

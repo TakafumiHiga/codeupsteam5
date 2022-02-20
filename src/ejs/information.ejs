@@ -2,17 +2,16 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_header') %>
-    <%- include('./common/_category-top') %>
+    <%- include('./common/_header') %> <%- include('./common/_category-top') %>
     <main>
       <div class="l-inner">
-         <%- include('./parts/compornent/_c-breadcrumb') %>
-          <div class="p-information__wrapper">
-             <%- include('./parts/compornent/_c-lists.ejs') %>
-          </div>
+        <%- include('./compornent/_c-breadcrumb') %>
+        <section class="l-information">
+          <%- include('./parts/_p-lists.ejs') %>
+        </section>
       </div>
     </main>
-    <%- include('./common/_footer') %>
-    <%- include('./parts/compornent/_c-page-top',{link:'#'}) %>
+    <%- include('./common/_footer') %> <%-
+    include('./compornent/_c-page-top',{link:'#'}) %>
   </body>
 </html>
